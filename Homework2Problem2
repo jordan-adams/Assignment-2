@@ -1,0 +1,40 @@
+# Homework 2 Problem 2
+# Jordan Adams
+
+a = input("What is the mass number?",)
+z = input("What is the atomic number?",)
+
+#inputs of mass number and atomic number from user
+
+
+print("Mass number is",a,)
+print("Atomic number is",z,)
+
+#stating the inputs
+
+
+if a%2==0 and z%2==0:
+    l = 12.0
+elif a%2==0 and z%2!=0:
+    l = -12.0
+else:
+    l = 0.0
+    
+# if/else block that handles determining whether a & z are odd or even and 
+# inserts required variable as conditions are met
+
+g = (15.67*a)
+h = (17.23*((a**.6666666667)))
+j = ((.75)*((z**2)/(a**.333333333333)))
+k = ((93.2)*(((a-2*z))**2)/(a))
+m = ((l)/(a**.5))
+
+#I broke the equation down like this because I kept getting the wrong value
+
+B = (g - h - j - k - m)
+#overall equation for binding energy
+
+print("The binding energy for the corresponding atom",B, "MeV")
+print("The binding energy per nucleon",B/a, "MeV/nuceon")
+
+#outputs for parts a) and b)

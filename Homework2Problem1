@@ -1,0 +1,27 @@
+# Homework 2 Problem 1
+# Jordan Adams
+
+c = 1
+x = (input("What is the distance in light years?", ))
+print("Distance of",x,"light years")
+
+v = (input("What is the fraction of the speed of light?", ))
+print("The fraction of the speed of light is", v)
+
+# Input for the requried variables of distance and fraction of the 
+# speed of light
+
+gamma = (1-(((v*c)**2)/(c**2)))**-0.5
+
+time = (x/v)
+
+timeprime = (gamma)*(time)
+
+print("The time in years that the spaceship takes to reach its destination in \
+the rest frame of an observer on Earth is", timeprime)
+print("The time in years that the spaceship takes to reach its detination as  \
+perceived by a passenger on board the ship is", time)
+
+# I took the stationary frame to be S' and the frame of reference for the 
+# spaceship to be S => t would be the time that passes for the spaceship, and
+# t' would be for an observer on Earth.
